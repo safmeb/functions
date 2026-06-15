@@ -18,7 +18,7 @@ function schedule (string $month,string $year): void
        if ($dayPerWeek === '6'|| $dayPerWeek === '7' ) {
           
           echo "\033[31m".$currentday->format('d-m-Y(l)')." выходной"."\033[0m".PHP_EOL; 
-          $workingday = ($dayPerWeek == '6') ? 2 : 3 ;
+          $workingday = ($dayPerWeek == '6') ? 2 : 1 ;
           
            
             } 
