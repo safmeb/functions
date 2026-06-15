@@ -39,3 +39,11 @@ function schedule (string $month,string $year): void
             
           $currentday ->modify('+ 1 days'); 
          
+
+         } 
+     }
+     
+        
+   
+
+schedule(year:$year, month:$month);
