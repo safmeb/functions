@@ -1,10 +1,10 @@
 <?php
-//declare(strict_types=1);
+declare(strict_types=1);
 
-$year = '2026';
-$month = '6'; 
+$year = 2026;
+$month = 7; 
 
-function schedule (string $month,string $year): void 
+function schedule ($month, $year): void 
 {
     $currentday = date_create(datetime: $year.'-'.$month.'-1');
     $workingday= 1;
@@ -31,9 +31,7 @@ function schedule (string $month,string $year): void
              $workingday ++;
              if ($workingday === 4)
                $workingday = 1;
-             
-             
-          
+      
              
             }
             
@@ -42,8 +40,3 @@ function schedule (string $month,string $year): void
 
          } 
      }
-     
-        
-   
-
-schedule(year:$year, month:$month);
